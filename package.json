@@ -3,23 +3,30 @@
   "version": "0.0.1",
   "description": "A simple cli tool to create a new file with the empty framework of a react class.",
   "main": "index.js",
+  "bin": {
+    "crc": "./bin/crc.js"
+  },
   "scripts": {
+    "crc": "index.js",
     "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bryanbierce/create-react-class.git"
   },
-  "keywords": [
-    "js",
-    "es6",
-    "react",
-    "cli"
-  ],
+  "keywords": ["js", "es6", "react", "cli"],
   "author": "Bryan Bierce",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bryanbierce/create-react-class/issues"
   },
-  "homepage": "https://github.com/bryanbierce/create-react-class#readme"
+  "homepage": "https://github.com/bryanbierce/create-react-class#readme",
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
