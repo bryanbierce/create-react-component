@@ -66,5 +66,5 @@ I have a number of other things for which I would like to build in support. Most
 
 ## Thanks! :sparkles:
 
-I hope some others find this as convenient as I have and removes a little tedium :simple_smile:  If you find a bug or have a feature request please don't hesitate to submit an issue or @bryanbierce me on Twitter.
+I hope some others find this as convenient as I have and removes a little tedium :smile:  If you find a bug or have a feature request please don't hesitate to submit an issue or @bryanbierce me on Twitter.
 
