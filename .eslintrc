@@ -1,11 +1,11 @@
-{
-  "env": {
-    "node": true
-  },
-  "extends": "airbnb-base/legacy",
-  "pluggins": ["import"],
-  "rules": {
-    "no-console": 0,
-    "semi": ["error", "never"]
-  }
-}
+// {
+//   "env": {
+//     "node": true
+//   },
+//   "extends": "airbnb-base/legacy",
+//   "pluggins": ["import"],
+//   "rules": {
+//     "no-console": 0,
+//     "semi": ["error", "never"]
+//   }
+// }
