@@ -1,4 +1,4 @@
-var componentStrings = require('./component-strings')
+var componentStrings = require('../constants/component-strings')
 
 exports.createImports = function() {
   return 'import React from \'react\';\n\n'

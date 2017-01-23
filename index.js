@@ -1,6 +1,6 @@
 var program = require('commander')
 var _ = require('./lib/lodash.custom.min.js')
-var createComponent = require('./actions/create-component')
+var createComponent = require('./src/actions/create-component')
 
 program
   .version('0.0.1')

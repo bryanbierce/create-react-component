@@ -3,7 +3,7 @@
     "node": true
   },
   "extends": "airbnb-base/legacy",
-  "pluggins": ["import"],
+  "pluggins": ["import", "ava"],
   "rules": {
     "no-console": 0,
     "semi": ["error", "never"]
