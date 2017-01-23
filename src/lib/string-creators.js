@@ -1,3 +1,4 @@
+// @flow
 var componentStrings = require('../constants/component-strings')
 
 exports.createImports = function() {

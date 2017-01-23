@@ -1,3 +1,4 @@
+// @flow
 var program = require('commander')
 var _ = require('./lib/lodash.custom.min.js')
 var createComponent = require('./src/actions/create-component')

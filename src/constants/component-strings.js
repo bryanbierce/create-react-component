@@ -1,3 +1,4 @@
+// @flow
 var init = 'class '
 var statelessInit = 'const '
 
