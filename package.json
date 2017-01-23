@@ -9,25 +9,32 @@
   "scripts": {
     "crc": "index.js",
     "lint": "eslint .",
-    "test": "test && ava --tap | tap-nyan",
+    "test": "nyc ava --tap | tap-nyan",
     "watch:test": "ava --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bryanbierce/create-react-component.git"
   },
-  "keywords": [
-    "js",
-    "javascript",
-    "react",
-    "cli"
-  ],
+  "keywords": ["js", "javascript", "react", "cli"],
   "author": "Bryan Bierce",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bryanbierce/create-react-component/issues"
-  },
+  "bugs": {"url": "https://github.com/bryanbierce/create-react-component/issues"},
   "homepage": "https://github.com/bryanbierce/create-react-component#readme",
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "include": [
+      "src"
+    ]
+  },
   "devDependencies": {
     "ava": "^0.17.0",
     "eslint": "^3.13.1",
@@ -37,6 +44,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "flow-bin": "^0.38.0",
+    "nyc": "^10.1.2",
     "tap-nyan": "^1.1.0"
   },
   "dependencies": {
