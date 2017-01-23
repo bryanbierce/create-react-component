@@ -5,7 +5,7 @@ A simple command line utility to make your React development workflow easier.
 ### Installation :floppy_disk:
 
 ```sh
-npm install -g create-react-component
+git clone https://github.com/bryanbierce/create-react-component.git && cd create-react-component && npm install && npm link
 ```
 
 
