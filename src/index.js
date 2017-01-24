@@ -1,7 +1,8 @@
 // @flow
-var program = require('commander')
-var _ = require('./src/lib/lodash.custom.min.js')
-var createComponent = require('./src/actions/create-component')
+import program from 'commander'
+import {pick, upperFirst} from 'lodash/core'
+import createComponent from './actions/create-component'
+
 
 program
   .version('0.0.1')
@@ -9,8 +10,8 @@ program
   .option('-s, --stateless', 'Creates a stateless component')
   .option('-f, --force', 'Force, will overwrite existing files with name conflicts')
   .action(function crcActionHandler(componentName, filePath) {
-    var options = _.pick(program, ['stateless', 'force'])
-    componentName = _.upperFirst(componentName)
+    const options = pick(program, ['stateless', 'force'])
+    componentName = upperFirst(componentName)
     createComponent(componentName, filePath, options)
   })
 

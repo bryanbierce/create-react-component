@@ -1,11 +1,11 @@
 // @flow
-var fs = require('fs')
-var path = require('path')
-var stringCreators = require('../lib/string-creators')
+import fs from 'fs'
+import path from 'path'
+import stringCreators from '../lib/string-creators'
 
 function createFile(filePath, isForce) {
-  var dirname = path.dirname(filePath)
-  var openFlags = isForce ? 'w' : 'wx'
+  const dirname = path.dirname(filePath)
+  const openFlags = isForce ? 'w' : 'wx'
 
   if (!fs.existsSync(dirname)) {
     fs.mkdirSync(dirname)
@@ -31,8 +31,8 @@ function closeFile(file) {
 }
 
 module.exports = function createComponent(componentName, filePath, options) {
-  var file = createFile(filePath, options.force)
-  var fileString = buildFileString(componentName, options.stateless)
+  const file = createFile(filePath, options.force)
+  const fileString = buildFileString(componentName, options.stateless)
   writeTo(file, fileString)
   closeFile(file)
 }

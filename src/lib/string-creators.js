@@ -1,5 +1,5 @@
 // @flow
-var componentStrings = require('../constants/component-strings')
+import componentStrings from '../constants/component-strings'
 
 exports.createImports = function() {
   return 'import React from \'react\';\n\n'
