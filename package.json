@@ -10,17 +10,30 @@
     "crc": "index.js",
     "lint": "eslint .",
     "test": "nyc ava --tap | tap-nyan",
-    "watch:test": "ava --watch"
+    "watch:test": "ava --watch",
+    "validate": "npm-run-all --parallel lint test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bryanbierce/create-react-component.git"
   },
-  "keywords": ["js", "javascript", "react", "cli"],
+  "keywords": [
+    "js",
+    "javascript",
+    "react",
+    "cli"
+  ],
   "author": "Bryan Bierce",
   "license": "MIT",
-  "bugs": {"url": "https://github.com/bryanbierce/create-react-component/issues"},
+  "bugs": {
+    "url": "https://github.com/bryanbierce/create-react-component/issues"
+  },
   "homepage": "https://github.com/bryanbierce/create-react-component#readme",
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run validate"
+    }
+  },
   "nyc": {
     "check-coverage": true,
     "branches": 100,
@@ -44,10 +57,13 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "flow-bin": "^0.38.0",
+    "ghooks": "^2.0.0",
+    "npm-run-all": "^4.0.1",
     "nyc": "^10.1.2",
     "tap-nyan": "^1.1.0"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "lodash": "^4.17.4"
   }
 }

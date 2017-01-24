@@ -5,3 +5,5 @@ coverage
 
 jsconfig.json
 .vscode
+
+npm-debug.log

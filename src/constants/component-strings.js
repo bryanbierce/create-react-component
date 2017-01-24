@@ -9,5 +9,5 @@ module.exports = {
   init: init,
   statelessInit: statelessInit,
   body: body,
-  statelessBody: statelessBody
+  statelessBody: statelessBody,
 }

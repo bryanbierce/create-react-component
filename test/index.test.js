@@ -1,4 +1,4 @@
-//@ flow
+// @flow
 var test = require('ava')
 
 
