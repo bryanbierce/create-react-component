@@ -2,11 +2,12 @@
   "env": {
     "node": true
   },
-  "extends": "standard",
   "pluggins": ["import", "ava"],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module"
+  },
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 1, "maxBOF": 0}],
-    "space-before-function-paren": ["error", "never"]
+    "no-console": 0
   }
 }

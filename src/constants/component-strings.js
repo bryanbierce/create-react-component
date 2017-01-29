@@ -1,13 +1,8 @@
 // @flow
-var init = 'class '
-var statelessInit = 'const '
+const init = 'class ';
+const statelessInit = 'const ';
 
-var body = ' extends React.Component {\n  render() {\n    return (\n      <div>\n      </div>\n    );\n  }\n}'
-var statelessBody = ' = () => (\n  <div>\n  </div>\n);'
+const body = ' extends React.Component {\n  render() {\n    return (\n      <div>\n      </div>\n    );\n  }\n}';
+const statelessBody = ' = () => (\n  <div>\n  </div>\n);';
 
-module.exports = {
-  init: init,
-  statelessInit: statelessInit,
-  body: body,
-  statelessBody: statelessBody,
-}
+export default {init: init, statelessInit: statelessInit, body: body, statelessBody: statelessBody}
